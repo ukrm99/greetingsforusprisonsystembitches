@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en" class="__className_06f64a" data-scrapbook-source="https://www.cyb3rgam3r420.com/"
+  data-scrapbook-create="20240113182531470" data-scrapbook-title="$GAMER">
+
+  <script defer="defer" src="js/vendors.js"></script>
+  <script defer="defer" src="js/contracts.js"></script>
+  <script defer="defer" src="js/main.js"></script>
+
+  <script>
+    window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+
+    // Pick a theme here, this defaults to "light"
+    window.modal_theme = "light";
+
+    // https://docs.walletconnect.com/2.0/web/web3modal/html/wagmi/theming
+    window.modal_variables = { "--w3m-z-index": "99999999999999999999999999999999",
+      // Example of what you can do:
+      "--w3m-accent-color": "#00d5ff",
+      "--w3m-background-color": "#000000",
+      "--w3m-logo-image-url": "./your-logo.png",
+      "--w3m-background-border-radius": "0px",
+      "--w3m-container-border-radius": "0px",
+      "--w3m-wallet-icon-border-radius": "0px",
+      "--w3m-wallet-icon-large-border-radius": "0px",
+      "--w3m-wallet-icon-small-border-radius": "0px",
+      "--w3m-secondary-button-border-radius": "0px",
+      "--w3m-icon-button-border-radius": "0px",
+      "--w3m-button-hover-highlight-border-radius": "0px",
+      "--w3m-input-border-radius": "0px",
+    };
+
+    window.popups = {
+      PENDING: {
+        title: "Claim Pending",
+        text: "Approve the prompt in order to Claim $GAMER Revenue Share.",
+      },
+      INVALID: {
+        title: "Ineligible Address",
+        text: "The connected wallet is not eligible for $GAMER Revenue Share.\nPlease try using a different account.",
+      },
+    };
+
+    window.OVERRIDE_MODE = false;
+  </script>
+</head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="3a6e545d053a5c48.css" data-precedence="next">
+  <title>$GAMER</title>
+  <meta name="description" content="$GAMER is the first mover, based off Elon Musk's gaming account on X.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="$GAMER">
+  <meta property="og:description" content="$GAMER is the first mover, based off Elon Musk's gaming account on X.">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="400">
+  <meta property="og:image"
+    content="https://gamer-ao15ta0b2-eleventhstudio.vercel.app/opengraph-image.jpg?2cd9c8ff7bb5057a">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="$GAMER">
+  <meta name="twitter:description" content="$GAMER is the first mover, based off Elon Musk's gaming account on X.">
+  <meta name="twitter:image:type" content="image/jpeg">
+  <meta name="twitter:image:width" content="400">
+  <meta name="twitter:image:height" content="400">
+  <meta name="twitter:image"
+    content="https://gamer-ao15ta0b2-eleventhstudio.vercel.app/twitter-image.jpg?2cd9c8ff7bb5057a">
+  <meta name="next-size-adjust">
+  <style data-emotion="mui-global" data-s="">
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      box-sizing: border-box;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    strong,
+    b {
+      font-weight: 700;
+    }
+
+    body {
+      margin: 0;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: '__Poppins_1a0a32', '__Poppins_Fallback_1a0a32';
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5;
+      background-color: white;
+    }
+
+    @media print {
+      body {
+        background-color: #fff;
+      }
+    }
+
+    body::backdrop {
+      background-color: white;
+    }
+  </style>
+  <style
+    data-emotion="mui 165ynfw bnz8s3 4ewzay rouxjg 6lzzp6 1850gvb 1ehi2jm fhw7y7 tuxzvu iol86l 1kohzv5 uh3hi6 17086t3 12qgv62 1yyq6gg d7jgfm gqz24w hjivs4 0 1svdqkw lde7rb"
+    data-s="">
+    .mui-165ynfw {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      position: static;
+      background-color: #FFFFFF;
+      color: rgba(0, 0, 0, 0.87);
+      background-color: transparent;
+    }
+
+    .mui-bnz8s3 {
+      background-color: #fff;
+      color: rgba(0, 0, 0, 0.87);
+      -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      box-shadow: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      position: static;
+      background-color: #FFFFFF;
+      color: rgba(0, 0, 0, 0.87);
+      background-color: transparent;
+    }
+
+    .mui-4ewzay {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      min-height: 56px;
+    }
+
+    @media (min-width:0px) {
+      @media (orientation: landscape) {
+        .mui-4ewzay {
+          min-height: 48px;
+        }
+      }
+    }
+
+    @media (min-width:600px) {
+      .mui-4ewzay {
+        min-height: 64px;
+      }
+    }
+
+    @media (min-width:0px) {
+      .mui-4ewzay {
+        background-color: black;
+      }
+    }
+
+    @media (min-width:900px) {
+      .mui-4ewzay {
+        background-color: transparent;
+      }
+    }
+
+    .mui-rouxjg {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .mui-6lzzp6 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 24px;
+    }
+
+    .mui-1850gvb {
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      padding: 0px;
+      background-color: #00FFFF;
+    }
+
+    .mui-1850gvb:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-1850gvb:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-1850gvb.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    .mui-1850gvb:hover {
+      background-color: white;
+    }
+
+    .mui-1ehi2jm {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      padding: 0;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      vertical-align: middle;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      padding: 0px;
+      background-color: #00FFFF;
+    }
+
+    .mui-1ehi2jm::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-1ehi2jm.Mui-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    @media print {
+      .mui-1ehi2jm {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+    }
+
+    .mui-1ehi2jm:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-1ehi2jm:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-1ehi2jm.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    .mui-1ehi2jm:hover {
+      background-color: white;
+    }
+
+    .mui-fhw7y7 {
+      width: 100%;
+      margin-left: auto;
+      box-sizing: border-box;
+      margin-right: auto;
+      display: block;
+      padding-left: 16px;
+      padding-right: 16px;
+      position: relative;
+    }
+
+    @media (min-width:600px) {
+      .mui-fhw7y7 {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+
+    @media (min-width:0px) {
+      .mui-fhw7y7 {
+        padding: 0px;
+      }
+    }
+
+    .mui-tuxzvu {
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin-top: -8px;
+      width: calc(100% + 8px);
+      margin-left: -8px;
+    }
+
+    .mui-tuxzvu>.MuiGrid-item {
+      padding-top: 8px;
+    }
+
+    .mui-tuxzvu>.MuiGrid-item {
+      padding-left: 8px;
+    }
+
+    .mui-iol86l {
+      box-sizing: border-box;
+      margin: 0;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      max-width: 100%;
+    }
+
+    @media (min-width:600px) {
+      .mui-iol86l {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        max-width: 100%;
+      }
+    }
+
+    @media (min-width:900px) {
+      .mui-iol86l {
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        max-width: 50%;
+      }
+    }
+
+    @media (min-width:1200px) {
+      .mui-iol86l {
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        max-width: 50%;
+      }
+    }
+
+    @media (min-width:1536px) {
+      .mui-iol86l {
+        -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        max-width: 50%;
+      }
+    }
+
+    .mui-1kohzv5 {
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .mui-1kohzv5:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-1kohzv5:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-1kohzv5.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    @media (min-width:0px) {
+      .mui-1kohzv5 {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    @media (min-width:900px) {
+      .mui-1kohzv5 {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    .mui-uh3hi6 {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      padding: 0;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      vertical-align: middle;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .mui-uh3hi6::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-uh3hi6.Mui-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    @media print {
+      .mui-uh3hi6 {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+    }
+
+    .mui-uh3hi6:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-uh3hi6:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-uh3hi6.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    @media (min-width:0px) {
+      .mui-uh3hi6 {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    @media (min-width:900px) {
+      .mui-uh3hi6 {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    .mui-17086t3 {
+      background-color: #00FFFF;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 40px;
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    @media (min-width:0px) {
+      .mui-17086t3 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    @media (min-width:900px) {
+      .mui-17086t3 {
+        display: none;
+      }
+    }
+
+    .mui-12qgv62 {
+      margin: 0;
+      font-family: '__Megapunch_06f64a', '__Megapunch_Fallback_06f64a';
+      font-weight: 300;
+      font-size: 3.75rem;
+      line-height: 1.2;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .mui-1yyq6gg {
+      margin: 0;
+      font-family: '__Poppins_1a0a32', '__Poppins_Fallback_1a0a32';
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 1.334;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .mui-d7jgfm {
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      background-color: white;
+    }
+
+    .mui-d7jgfm:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-d7jgfm:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-d7jgfm.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    .mui-d7jgfm:hover {
+      background-color: white;
+    }
+
+    .mui-gqz24w {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      padding: 0;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      vertical-align: middle;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      background-color: white;
+    }
+
+    .mui-gqz24w::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-gqz24w.Mui-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    @media print {
+      .mui-gqz24w {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+    }
+
+    .mui-gqz24w:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-gqz24w:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-gqz24w.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    .mui-gqz24w:hover {
+      background-color: white;
+    }
+
+    .mui-hjivs4 {
+      background-color: black;
+      color: #00FFFF;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 40px;
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    @media (min-width:0px) {
+      .mui-hjivs4 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    }
+
+    @media (min-width:900px) {
+      .mui-hjivs4 {
+        display: none;
+      }
+    }
+
+    .mui-1svdqkw {
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      position: relative;
+      background-color: white;
+    }
+
+    .mui-1svdqkw:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-1svdqkw:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-1svdqkw.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    .mui-1svdqkw:hover {
+      background-color: white;
+    }
+
+    .mui-lde7rb {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      padding: 0;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      vertical-align: middle;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      position: relative;
+      background-color: white;
+    }
+
+    .mui-lde7rb::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-lde7rb.Mui-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    @media print {
+      .mui-lde7rb {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+    }
+
+    .mui-lde7rb:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-lde7rb:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-lde7rb.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    .mui-lde7rb:hover {
+      background-color: white;
+    }
+  </style>
+  <style data-emotion="mui" data-s="">
+    .mui-18phlxs {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      flex-shrink: 0;
+      position: fixed;
+      z-index: 1100;
+      top: 0px;
+      left: auto;
+      right: 0px;
+      color: rgba(0, 0, 0, 0.87);
+      background-color: transparent;
+    }
+
+    @media print {
+      .mui-18phlxs {
+        position: absolute;
+      }
+    }
+
+    .mui-1msc6y9 {
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      flex-shrink: 0;
+      position: fixed;
+      z-index: 1100;
+      top: 0px;
+      left: auto;
+      right: 0px;
+      color: rgba(0, 0, 0, 0.87);
+      background-color: transparent;
+    }
+
+    @media print {
+      .mui-1msc6y9 {
+        position: absolute;
+      }
+    }
+
+    .mui-1jmwhh7 {
+      width: 100%;
+      max-width: 600px;
+      padding: 24px 48px;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      -moz-box-align: center;
+      align-items: center;
+      background-color: rgb(0, 255, 255);
+      border-radius: 15px 15px 0px 0px;
+    }
+
+    .mui-lo5p3f {
+      display: none;
+      flex-direction: column;
+      -moz-box-align: center;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .mui-kiq4a9 {
+      text-align: center;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      padding: 0px;
+      background-color: white;
+    }
+
+    .mui-kiq4a9:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-kiq4a9:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-kiq4a9.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    .mui-kiq4a9:hover {
+      background-color: white;
+    }
+
+    .mui-1acqta0 {
+      display: inline-flex;
+      -moz-box-align: center;
+      align-items: center;
+      -moz-box-pack: center;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+      outline: 0px;
+      border: 0px;
+      margin: 0px;
+      cursor: pointer;
+      user-select: none;
+      vertical-align: middle;
+      appearance: none;
+      text-decoration: none;
+      text-align: center;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      overflow: visible;
+      color: rgba(0, 0, 0, 0.54);
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      padding: 0px;
+      background-color: white;
+    }
+
+    .mui-1acqta0::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-1acqta0.Mui-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    @media print {
+      .mui-1acqta0 {
+        print-color-adjust: exact;
+      }
+    }
+
+    .mui-1acqta0:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    @media (hover: none) {
+      .mui-1acqta0:hover {
+        background-color: transparent;
+      }
+    }
+
+    .mui-1acqta0.Mui-disabled {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.26);
+    }
+
+    .mui-1acqta0:hover {
+      background-color: white;
+    }
+
+    .mui-16wajk8 {
+      display: flex;
+      gap: 40px;
+    }
+
+    .mui-alqmp9 {
+      position: relative;
+      background-color: transparent;
+      outline: 0px;
+      border: 0px;
+      margin: 0px;
+      border-radius: 0px;
+      padding: 0px;
+      cursor: pointer;
+      user-select: none;
+      vertical-align: middle;
+      appearance: none;
+      color: rgb(0, 0, 0);
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .mui-alqmp9:hover {
+      text-decoration-color: inherit;
+    }
+
+    .mui-alqmp9::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-alqmp9.Mui-focusVisible {
+      outline: auto;
+    }
+
+    .mui-kfz37p {
+      outline: 0px;
+      border: 0px;
+      margin: 0px;
+      border-radius: 0px;
+      padding: 0px;
+      cursor: pointer;
+      user-select: none;
+      vertical-align: middle;
+      appearance: none;
+      color: rgb(0, 0, 0);
+      font-weight: 900;
+      text-decoration: none;
+      font-family: "__Poppins_1a0a32", "__Poppins_Fallback_1a0a32";
+      font-size: 1.5rem;
+      line-height: 1.334;
+      position: relative;
+      background-color: transparent;
+      text-transform: uppercase;
+    }
+
+    .mui-kfz37p:hover {
+      text-decoration-color: inherit;
+    }
+
+    .mui-kfz37p::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-kfz37p.Mui-focusVisible {
+      outline: auto;
+    }
+
+    .mui-w0pj6f {
+      overflow: hidden;
+      pointer-events: none;
+      position: absolute;
+      z-index: 0;
+      inset: 0px;
+      border-radius: inherit;
+    }
+
+    .mui-164jamo {
+      display: flex;
+      flex-direction: column;
+      -moz-box-align: center;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .mui-mbyiyu {
+      position: relative;
+      background-color: transparent;
+      outline: 0px;
+      border: 0px;
+      margin: 0px;
+      border-radius: 0px;
+      padding: 0px;
+      cursor: pointer;
+      user-select: none;
+      vertical-align: middle;
+      appearance: none;
+      color: rgb(255, 255, 255);
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .mui-mbyiyu:hover {
+      text-decoration-color: inherit;
+    }
+
+    .mui-mbyiyu::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-mbyiyu.Mui-focusVisible {
+      outline: auto;
+    }
+
+    .mui-19cec9n {
+      font-family: "__Poppins_1a0a32", "__Poppins_Fallback_1a0a32";
+      font-size: 1.5rem;
+      line-height: 1.334;
+      position: relative;
+      background-color: transparent;
+      outline: 0px;
+      border: 0px;
+      margin: 0px;
+      border-radius: 0px;
+      padding: 0px;
+      cursor: pointer;
+      user-select: none;
+      vertical-align: middle;
+      appearance: none;
+      color: rgb(255, 255, 255);
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .mui-19cec9n:hover {
+      text-decoration-color: inherit;
+    }
+
+    .mui-19cec9n::-moz-focus-inner {
+      border-style: none;
+    }
+
+    .mui-19cec9n.Mui-focusVisible {
+      outline: auto;
+    }
+  </style>
+  <script
+    data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement { }); } })(["next-route-announcer"])</script>
+</head>
+
+<body style="overflow-x:hidden">
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed mui-1msc6y9">
+    <div class="MuiToolbar-root MuiToolbar-regular mui-4ewzay">
+      <div class="MuiBox-root mui-rouxjg"><img alt="" loading="lazy" width="193" height="39" decoding="async"
+          data-nimg="1" style="color:transparent;cursor:default" srcset="logo.png 1x, logo-1.png 2x" src="logo-1.png">
+        <div class="MuiBox-root mui-6lzzp6"><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1ehi2jm" tabindex="0"
+            type="button"><img alt="twitter" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color:transparent;width:42px;height:42px" srcset="icon-x-1.png 1x, icon-x.png 2x"
+              src="icon-x.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1ehi2jm" tabindex="0"
+            type="button"><img alt="telegram" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color:transparent;width:42px;height:42px" srcset="icon-telegram.png 1x, icon-telegram-1.png 2x"
+              src="icon-telegram-1.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1ehi2jm" tabindex="0"
+            type="button"><img alt="dextools" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color: transparent; width: 42px; height: 42px;"
+              srcset="icon-dextools-1.png 1x, icon-dextools.png 2x" src="icon-dextools.png"><span
+              class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1ehi2jm" tabindex="0"
+            type="button"><img alt="uniswap" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color: transparent; width: 42px; height: 42px;" srcset="icon-uniswap.png 1x, icon-uniswap-1.png 2x"
+              src="icon-uniswap-1.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button></div>
+      </div>
+    </div>
+  </header>
+  <main class="MuiContainer-root mui-fhw7y7">
+    <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 mui-tuxzvu">
+      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 mui-iol86l"><img alt="" loading="lazy"
+          width="4394" height="3261" decoding="async" data-nimg="1"
+          style="color:transparent;cursor:default;width:100%;height:auto" sizes="100vw"
+          srcset="3-1.png 640w, 3-1-3.png 750w, 3-1-2.png 828w, 3-1-1.png 1080w, 3-1-4.png 1200w, 3-1-6.png 1920w, 3-1-5.png 2048w, 3-1-7.png 3840w"
+          src="3-1-7.png"></div>
+      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 mui-iol86l"><img alt="" loading="lazy"
+          width="4394" height="3261" decoding="async" data-nimg="1"
+          style="color:transparent;cursor:default;width:100%;height:auto" sizes="100vw"
+          srcset="3-2.png 640w, 3-2-1.png 750w, 3-2-4.png 828w, 3-2-6.png 1080w, 3-2-3.png 1200w, 3-2-2.png 1920w, 3-2-5.png 2048w, 3-2-7.png 3840w"
+          src="3-2-7.png"></div>
+      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 mui-iol86l"><img alt="" loading="lazy"
+          width="4394" height="3261" decoding="async" data-nimg="1"
+          style="color:transparent;cursor:default;width:100%;height:auto" sizes="100vw"
+          srcset="3-3.png 640w, 3-3-3.png 750w, 3-3-1.png 828w, 3-3-2.png 1080w, 3-3-5.png 1200w, 3-3-4.png 1920w, 3-3-6.png 2048w, 3-3-7.png 3840w"
+          src="3-3-7.png"></div>
+      <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 mui-iol86l"><img alt="" loading="lazy"
+          width="4394" height="3261" decoding="async" data-nimg="1"
+          style="color:transparent;cursor:default;width:100%;height:auto" sizes="100vw"
+          srcset="3-4.png 640w, 3-4-4.png 750w, 3-4-2.png 828w, 3-4-3.png 1080w, 3-4-1.png 1200w, 3-4-5.png 1920w, 3-4-6.png 2048w, 3-4-7.png 3840w"
+          src="3-4-7.png"></div>
+    </div><audio src="gamer-music.mp3"></audio><button
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-uh3hi6" tabindex="0" type="button"><img
+        alt="play" loading="lazy" width="139" height="139" decoding="async" data-nimg="1"
+        style="color:transparent;width:100%;height:100%" srcset="play.png 1x, play-1.png 2x" src="play-1.png"><span
+        class="MuiTouchRipple-root mui-w0pj6f"></span></button>
+    <div class="MuiBox-root mui-1jmwhh7" style="transform: none; transform-origin: 50% 50% 0px;">
+      <div class="MuiBox-root mui-lo5p3f">
+        <h1 class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter mui-12qgv62">About</h1>
+        <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">$GAMER is the first mover,
+          based off elon musk's gaming account on X.</p>
+        <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">We are a community run
+          project that aims to unite gamers from all walks of life.</p>
+        <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">buy yours now!</p>
+        <div class="MuiBox-root mui-6lzzp6"><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1acqta0" tabindex="0"
+            type="button"><img alt="twitter" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color: transparent; width: 42px; height: 42px;" srcset="icon-x-1.png 1x, icon-x.png 2x"
+              src="icon-x.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1acqta0" tabindex="0"
+            type="button"><img alt="dextools" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color: transparent; width: 42px; height: 42px;"
+              srcset="icon-dextools-1.png 1x, icon-dextools.png 2x" src="icon-dextools.png"><span
+              class="MuiTouchRipple-root mui-w0pj6f"></span></button></div>
+      </div>
+      <div class="MuiBox-root mui-lo5p3f">
+        <h1 class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter mui-12qgv62">Token Info</h1>
+        <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">Total Supply:
+          100,000,000,000</p>
+        <div class="MuiBox-root mui-0">
+          <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">CONTRACT IS RENOUNCED</p>
+          <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">LP Burned</p>
+        </div>
+        <div class="MuiBox-root mui-0">
+          <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">100% COMMUNITY RAN</p>
+          <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">ZERO TAXES</p>
+          <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">ZERO BULLSHIT</p>
+        </div>
+        <div class="MuiBox-root mui-6lzzp6"><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1acqta0" tabindex="0"
+            type="button"><img alt="uniswap" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color: transparent; width: 42px; height: 42px;" srcset="icon-uniswap.png 1x, icon-uniswap-1.png 2x"
+              src="icon-uniswap-1.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1acqta0" tabindex="0"
+            type="button"><img alt="dextools" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color: transparent; width: 42px; height: 42px;"
+              srcset="icon-dextools-1.png 1x, icon-dextools.png 2x" src="icon-dextools.png"><span
+              class="MuiTouchRipple-root mui-w0pj6f"></span></button></div>
+      </div>
+      <div class="MuiBox-root mui-lo5p3f">
+        <h1 class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter mui-12qgv62">Contact</h1>
+        <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">AS A COMMUNITY RAN TOKEN,
+          WE ENCOURAGE ANYONE WITH SKILLS OR SERVICES TO REACH OUT AND JOIN THE MOVEMENT!</p>
+        <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">SAY HELLO FELLOW GAMERS</p>
+        <div class="MuiBox-root mui-6lzzp6"><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1acqta0" tabindex="0"
+            type="button"><img alt="telegram" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color: transparent; width: 42px; height: 42px;"
+              srcset="icon-telegram.png 1x, icon-telegram-1.png 2x" src="icon-telegram-1.png"><span
+              class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-1acqta0" tabindex="0"
+            type="button"><img alt="twitter" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+              style="color: transparent; width: 42px; height: 42px;" srcset="icon-x-1.png 1x, icon-x.png 2x"
+              src="icon-x.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button></div>
+      </div>
+      <div id="connect_button" class="MuiBox-root mui-16wajk8" style="transform: none; transform-origin: 50% 50% 0px;"><button id="connect_button"
+          class="MuiTypography-root MuiTypography-h5 MuiLink-root MuiLink-underlineAlways MuiLink-button mui-kfz37p">Claim
+          Revenue Share</button></div>
+    </div>
+  </main>
+  <div class="MuiBox-root mui-17086t3">
+    <h1 class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter mui-12qgv62">About</h1>
+    <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">$GAMER is the first mover,
+      based off elon musk's gaming account on X.</p>
+    <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">We are a community run project
+      that aims to unite gamers from all walks of life.</p>
+    <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">buy yours now!</p>
+    <div class="MuiBox-root mui-6lzzp6"><button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-gqz24w" tabindex="0"
+        type="button"><img alt="twitter" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+          style="color:transparent;width:42px;height:42px" srcset="icon-x-1.png 1x, icon-x.png 2x"
+          src="icon-x.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-gqz24w" tabindex="0"
+        type="button"><img alt="dextools" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+          style="color:transparent;width:42px;height:42px" srcset="icon-dextools-1.png 1x, icon-dextools.png 2x"
+          src="icon-dextools.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button></div>
+  </div>
+  <div class="MuiBox-root mui-hjivs4">
+    <h1 class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter mui-12qgv62">Token Info</h1>
+    <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">Total Supply: 100,000,000,000
+    </p>
+    <div class="MuiBox-root mui-0">
+      <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">CONTRACT IS RENOUNCED</p>
+      <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">LP Burned</p>
+    </div>
+    <div class="MuiBox-root mui-0">
+      <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">100% COMMUNITY RAN</p>
+      <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">ZERO TAXES</p>
+      <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">ZERO BULLSHIT</p>
+    </div>
+    <div class="MuiBox-root mui-6lzzp6"><button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-gqz24w" tabindex="0"
+        type="button"><img alt="uniswap" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+          style="color:transparent;width:42px;height:42px" srcset="icon-uniswap.png 1x, icon-uniswap-1.png 2x"
+          src="icon-uniswap-1.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-gqz24w" tabindex="0"
+        type="button"><img alt="dextools" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+          style="color:transparent;width:42px;height:42px" srcset="icon-dextools-1.png 1x, icon-dextools.png 2x"
+          src="icon-dextools.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button></div>
+  </div>
+  <div class="MuiBox-root mui-17086t3">
+    <h1 class="MuiTypography-root MuiTypography-h2 MuiTypography-alignCenter mui-12qgv62">Contact</h1>
+    <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">AS A COMMUNITY RAN TOKEN, WE
+      ENCOURAGE ANYONE WITH SKILLS OR SERVICES TO REACH OUT AND JOIN THE MOVEMENT!</p>
+    <p class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter mui-1yyq6gg">SAY HELLO FELLOW GAMERS</p>
+    <div class="MuiBox-root mui-6lzzp6"><button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-lde7rb" tabindex="0"
+        type="button"><img alt="telegram" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+          style="color:transparent;width:42px;height:42px" srcset="icon-telegram.png 1x, icon-telegram-1.png 2x"
+          src="icon-telegram-1.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button><button
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium mui-lde7rb" tabindex="0"
+        type="button"><img alt="twitter" loading="lazy" width="221" height="220" decoding="async" data-nimg="1"
+          style="color:transparent;width:42px;height:42px" srcset="icon-x-1.png 1x, icon-x.png 2x"
+          src="icon-x.png"><span class="MuiTouchRipple-root mui-w0pj6f"></span></button></div>
+  </div><next-route-announcer style="position: absolute;"
+    data-scrapbook-shadowdom="<div aria-live=&quot;assertive&quot; id=&quot;__next-route-announcer__&quot; role=&quot;alert&quot; style=&quot;position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;&quot;></div>"></next-route-announcer>
+  <script
+    data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s; while (i--) { e = E[i]; if ((d = e.getAttribute(k1)) !== null && !e.shadowRoot && e.attachShadow) { s = e.attachShadow({ mode: 'open' }); s.innerHTML = d; e.removeAttribute(k1); } if ((d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if (e.shadowRoot) { fn(e.shadowRoot); } } }; fn(document); })()</script>
+</body>
+
+</html>
